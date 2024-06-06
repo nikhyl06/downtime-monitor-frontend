@@ -20,12 +20,12 @@ const GraphDisplay = ({ activeTab, dateLimits }) => {
       )}
       {activeTab === "SparePartsMonth" && (
         <Suspense fallback={<div>Loading...</div>}>
-          <SparePartsDay dateLimits={dateLimits} />
+          <SparePartsMonth dateLimits={dateLimits} />
         </Suspense>
       )}
       {activeTab === "SparePartsDay" && (
         <Suspense fallback={<div>Loading...</div>}>
-          <SparePartsMonth dateLimits={dateLimits} />
+          <SparePartsDay dateLimits={dateLimits} />
         </Suspense>
       )}
     </div>
