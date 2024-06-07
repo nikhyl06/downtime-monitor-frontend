@@ -3,7 +3,7 @@ const BASE_URL = "https://downtime-monitor-api.onrender.com/";
 
 export default axios.create({
   baseURL: BASE_URL,
-  withCredentials: true,
+  credentials: "include",
   headers: {
     "Content-Type": "application/json",
   },
@@ -11,7 +11,7 @@ export default axios.create({
 
 export const axiosPrivate = axios.create({
   baseURL: BASE_URL,
-  withCredentials: true,
+  credentials: "include",
   headers: {
     "Content-Type": "application/json",
   },
